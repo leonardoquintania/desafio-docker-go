@@ -1,17 +1,26 @@
-# desafio-docker-go
-Esse desafio é muito empolgante principalmente se você nunca trabalhou com a linguagem Go!
-Você terá que publicar uma imagem no docker hub. Quando executarmos:
+# Desafio GoLang
+Desafio do curso FullCycle, no módulo de DevOps, trabalhando com docker.
 
-docker run <seu-user>/codeeducation
+### Descrição do desafio
+> Deverá ser criado uma imagem docker de golang, que ao executar o comando de running, imprima na tela a mensagem: "Code.education Rocks!"
 
-Temos que ter o seguinte resultado: Code.education Rocks!
+### Requisitos
+1. O nome da imagem deverá ser: username/codeeducation
+2. A imagem deverá ter menos de __2MB__ de tamanho
 
-Se você perceber, essa imagem apenas realiza um print da mensagem como resultado final, logo, vale a pena dar uma conferida no próprio site da Go Lang para aprender como fazer um "olá mundo".
+### Para rodar
+##### Dockerhub :whale:
+```docker pull leonardoquintania/codeeducation
+docker run leonardoquintania/codeeducation
+```
+<br/>
 
-Lembrando que a Go Lang possui imagens oficiais prontas, vale a pena consultar o Docker Hub.
-
-3) A imagem de nosso projeto Go precisa ter menos de 2MB =)
-
-Dica: No vídeo de introdução sobre o Docker quando falamos sobre o sistema de arquivos em camadas, apresento uma imagem "raiz", talvez seja uma boa utilizá-la.
-
-Divirta-se
+##### Diretamente
+```
+git clone ...
+cd desafio-docker-golang
+docker build -t leonardoquintania/codeeducation .
+docker run leonardoquintania/codeeducation
+```
+<br/>
+<br/>
